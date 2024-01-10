@@ -1,6 +1,6 @@
-# Fantom PWA Wallet
+# X1 PWA Wallet
 
-JavaScript and Vue based Fantom pwa wallet.
+JavaScript and Vue based X1 pwa wallet.
 
 We are using:
 * Node / NPM
@@ -44,4 +44,3 @@ npm run build:chrome-extension:app
 ## Localization
 
 Translations for views and components are located in `src/locales` directory.
-
