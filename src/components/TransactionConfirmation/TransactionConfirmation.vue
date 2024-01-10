@@ -14,7 +14,7 @@
         >
             <h2 class="not-visible" data-focus>
                 <span v-if="token.address"> Send {{ tokenSymbol }} </span>
-                <span v-else>Send X1 Fastnet XN</span>
+                <span v-else>Send X1 Testnet XN</span>
             </h2>
 
             <div class="transaction-info">

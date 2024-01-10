@@ -234,7 +234,7 @@ export default class FantomNano {
     }
 
     /**
-     * getAddress extracts Fantom wallet address for the given account and address id.
+     * getAddress extracts X1 Wallet  address for the given account and address id.
      *
      * @param {number} accountId Zero based account identifier.
      * @param {number} addressId Zero based address identifier.
@@ -247,7 +247,7 @@ export default class FantomNano {
     }
 
     /**
-     * listAddresses extracts sequence of logically consequent Fantom wallet addresses
+     * listAddresses extracts sequence of logically consequent X1 Wallet  addresses
      * for the given account, initial address id and expected address length.
      *
      * Please note that user will be warned if you ask for an address range exceeding
@@ -292,7 +292,7 @@ export default class FantomNano {
     }
 
     /**
-     * getPublicKey derives Fantom wallet public key for the given account and address id.
+     * getPublicKey derives X1 Wallet  public key for the given account and address id.
      *
      * @param {number} accountId Zero based account identifier.
      * @param {number} addressId Zero based address identifier.

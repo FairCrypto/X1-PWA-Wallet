@@ -2,7 +2,7 @@
     <div class="send-transaction-form">
         <h2 :id="labelId" class="with-back-btn align-center" data-focus>
             <template v-if="token.address"> Send {{ tokenSymbol }} </template>
-            <template v-else>Send X1 Fastnet XN</template>
+            <template v-else>Send X1 Testnet XN</template>
         </h2>
 
         <f-card class="f-card-double-padding">
@@ -166,7 +166,7 @@ export default {
             amountErrMsg: 'Invalid amount',
             gasPrice: '',
             amount: '',
-            sendToErrorMsg: 'Enter a valid X1 Fastnet XN address or domain name',
+            sendToErrorMsg: 'Enter a valid X1 Testnet XN address or domain name',
             /** Balance of BNB or ETH account. */
             ETHOrBNBAccountBalance: '',
             minFTMToTransfer: appConfig.bnbridgeApi.minFTMToTransfer,
@@ -297,7 +297,7 @@ export default {
             if (d_sendDirection === 'OperaToOpera') {
                 value = (await this.resolveAddress(value, 'XN', 'OPERA')) || value;
                 validAddress = this.$fWallet.isValidAddress(value);
-                this.sendToErrorMsg = 'Enter a valid X1 Fastnet XN address or domain name';
+                this.sendToErrorMsg = 'Enter a valid X1 Testnet XN address or domain name';
             } else if (d_sendDirection === 'OperaToBinance') {
                 validAddress = this.$bnb.isBNBAddress(value);
                 this.sendToErrorMsg = 'Enter a valid BNB address';
@@ -450,7 +450,7 @@ export default {
                 this.windowTitle =
                     this.token && this.token.symbol
                         ? `Send ${this.$defi.getTokenSymbol(this.token)}`
-                        : 'Send X1 Fastnet XN';
+                        : 'Send X1 Testnet XN';
 
                 this.$refs.confirmationWindow.changeComponent('transaction-confirmation', {
                     txData: { ...data },

@@ -3,7 +3,7 @@
         <h2 :id="labelId" class="not-visible">Wallet installation</h2>
 
         <p class="align-center">
-            The X1 Fastnet Wallet has been created as a Progressive Web App (PWA) which is easy to launch on all
+            The X1 Testnet Wallet has been created as a Progressive Web App (PWA) which is easy to launch on all
             platforms:
         </p>
 
@@ -42,11 +42,11 @@
                 <ul class="no-markers">
                     <li>
                         <b>Step 1:</b> Open the
-                        <a href="https://wallet.x1-fastnet.infrafc.org/">X1 Fastnet Wallet</a> in
+                        <a href="https://wallet.x1-Testnet.infrafc.org/">X1 Testnet Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Go to <b>Settings</b> (Three dots in the top right corner)</li>
-                    <li><b>Step 3:</b> Click <b>“Install X1 Fastnet PWA Wallet”</b></li>
+                    <li><b>Step 3:</b> Click <b>“Install X1 Testnet PWA Wallet”</b></li>
                 </ul>
             </div>
         </f-window>
@@ -62,7 +62,7 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Fantom Wallet</a> in
+                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">X1 Wallet </a> in
                         <b>Safari</b>
                     </li>
                     <li><b>Step 2:</b> Click the <b>Share button</b> in Safari (at the bottom)</li>
@@ -83,7 +83,7 @@
                 <ul class="no-markers">
                     <li>
                         <b>Step 1:</b> Open the
-                        <a href="https://wallet.x1-fastnet.infrafc.org/">X1 Fastnet Wallet</a> in
+                        <a href="https://wallet.x1-Testnet.infrafc.org/">X1 Testnet Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Click <b>Settings</b> (top right corner)</li>

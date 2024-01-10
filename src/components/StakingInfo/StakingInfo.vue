@@ -135,7 +135,7 @@
                                 </f-message>
                                 <!--
                                 <h3 class="align-center">
-                                    Your {{ toFTM(accountInfo.delegated) }} X1 Fastnet XN is available for withdraw in 7 days.
+                                    Your {{ toFTM(accountInfo.delegated) }} X1 Testnet XN is available for withdraw in 7 days.
                                 </h3>
                                 -->
                             </template>

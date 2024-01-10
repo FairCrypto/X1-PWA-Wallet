@@ -47,23 +47,23 @@ const appConfig = {
     },
     disableFLend: true,
     //
-    useTestnet: false,
+    useTestnet: true,
     // testnet config
     testnet: {
         // list of providers. if one of them is unavailable, another is randomly picked
         providers: [
             {
-                http: 'https://xapi.testnet.fantom.network/api',
+                http: 'https://graphql-api.x1-testnet.infrafc.org/graphql',
                 // for subscriptions
                 ws: '',
             },
         ],
         // JSON-RPC endpoint
-        rpc: 'https://xapi.testnet.fantom.network/lachesis',
+        rpc: 'https://x1-testnet.xen.network',
         // used in links pointing to fantom explorer
-        explorerUrl: 'https://explorer.testnet.fantom.network/',
+        explorerUrl: 'https://explorer.x1-testnet.xen.network/',
         // used in links pointing to validators
-        explorerUrl2: 'https://explorer.testnet.fantom.network/',
+        explorerUrl2: 'https://pwa-explorer.x1-testnet.infrafc.org/',
         // used in links pointing to fantom explorer's transaction detail
         explorerTransactionPath: 'transactions',
         // chain id for testnet

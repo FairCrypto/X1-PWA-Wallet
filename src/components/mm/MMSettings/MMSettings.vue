@@ -5,22 +5,22 @@
                 <template v-if="isMMInstalled">
                     <div class="mmsettings_section">
                         <h3>Networks</h3>
-                        <button
-                            id="add_mainnet_btn"
-                            class="btn large"
-                            :disabled="addFantomMainnetInProgress"
-                            @click="onAddChainClick('mainnet')"
-                        >
-                            Add Fantom Opera Mainnet
-                            <pulse-loader v-if="addFantomMainnetInProgress" color="#fff"></pulse-loader>
-                        </button>
+                        <!--                        <button-->
+                        <!--                            id="add_mainnet_btn"-->
+                        <!--                            class="btn large"-->
+                        <!--                            :disabled="addFantomMainnetInProgress"-->
+                        <!--                            @click="onAddChainClick('mainnet')"-->
+                        <!--                        >-->
+                        <!--                            Add X1 Mainnet-->
+                        <!--                            <pulse-loader v-if="addFantomMainnetInProgress" color="#fff"></pulse-loader>-->
+                        <!--                        </button>-->
                         <button
                             id="add_testnet_btn"
                             class="btn large secondary"
                             :disabled="addFantomTestnetInProgress"
                             @click="onAddChainClick('testnet')"
                         >
-                            Add Fantom Testnet
+                            Add X1 Testnet
                             <pulse-loader v-if="addFantomTestnetInProgress" color="#1969ff"></pulse-loader>
                         </button>
                     </div>

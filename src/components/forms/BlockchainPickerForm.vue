@@ -1,7 +1,7 @@
 <template>
     <div class="blockchain-picker-form">
         <h2 class="with-back-btn align-center" data-focus>
-            Send X1 Fastnet XN
+            Send X1 Testnet XN
         </h2>
 
         <f-card class="f-card-double-padding">

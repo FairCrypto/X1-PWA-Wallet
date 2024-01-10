@@ -42,7 +42,7 @@
                                     >
                                         <template #popover-text>
                                             Address copied to clipboard. <br />
-                                            Warning: Use this address to receive X1 Fastnet XN only. If you are
+                                            Warning: Use this address to receive X1 Testnet XN only. If you are
                                             receiving XN-ERC20 you need to use a different address!
                                         </template>
                                     </f-copy-button>

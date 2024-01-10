@@ -16,7 +16,7 @@
                         >
                             <template #popover-text>
                                 Address copied to clipboard. <br />
-                                Warning: Use this address to receive X1 Fastnet XN only. If you are receiving XN-ERC20
+                                Warning: Use this address to receive X1 Testnet XN only. If you are receiving XN-ERC20
                                 you need to use a different address!
                             </template>
                         </f-copy-button>
@@ -92,7 +92,7 @@
 
         <q-r-code-window ref="qrWindow" :address="account.address">
             <f-message type="warning" with-icon>
-                Warning: Use this address to receive X1 Fastnet XN only. If you are receiving XN-ERC20 you need to use a
+                Warning: Use this address to receive X1 Testnet XN only. If you are receiving XN-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>
