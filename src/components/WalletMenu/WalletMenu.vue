@@ -19,8 +19,8 @@
             <div class="body">
                 <div class="logo">
                     <router-link to="/" class="logo-link">
-                        <icon data="@/assets/svg/fantom.svg" width="40" height="50" />
-                        <span class="wallet-label">fWallet</span>
+                        <!--                        <icon data="@/assets/svg/fantom.svg" width="40" height="50" />-->
+                        <span class="wallet-label">X1 Wallet</span>
                     </router-link>
                 </div>
                 <f-simple-navigation :items="navigation" aria-label="main navigation" />
@@ -28,7 +28,7 @@
             <div class="footer">
                 <social-media-links />
                 <div class="copyright">
-                    <a href="https://fantom.foundation/" target="_blank" rel="noopener">©2020 Fantom Foundation</a>
+                    <a href="https://xen.network/" target="_blank" rel="noopener">©2022 Fair Crypto</a>
                 </div>
             </div>
         </div>
@@ -50,10 +50,10 @@ import settingsIcon from '../../assets/svg/monochrome/Sidebar/Settings.svg';
 import walletIcon from '../../assets/svg/monochrome/Sidebar/Wallet.svg';
 // import defiIcon from '../../assets/svg/monochrome/Sidebar/DeFi.svg';
 import stakingIcon from '../../assets/svg/monochrome/Sidebar/Staking.svg';
-import funiIcon from '../../assets/svg/monochrome/Sidebar/fUNI.svg';
-import swapIcon from '../../assets/svg/defi/ftrade.svg';
-import voteIcon from '../../assets/svg/monochrome/Sidebar/Governance.svg';
-import fmintIcon from '../../assets/svg/defi/mint.svg';
+// import funiIcon from '../../assets/svg/monochrome/Sidebar/fUNI.svg';
+// import swapIcon from '../../assets/svg/defi/ftrade.svg';
+// import voteIcon from '../../assets/svg/monochrome/Sidebar/Governance.svg';
+// import fmintIcon from '../../assets/svg/defi/mint.svg';
 
 /*
 import homeIcon from '../../assets/svg/home.svg';
@@ -120,24 +120,24 @@ export default {
                     stakingLink: true,
                     fill: true,
                 },
-                {
-                    url: {
-                        name: 'fmint',
-                    },
-                    title: 'fMint',
-                    icon: fmintIcon,
-                    fillColor: true,
-                    fmintLink: true,
-                },
-                {
-                    url: {
-                        name: 'fswap',
-                    },
-                    title: 'fSwap',
-                    icon: swapIcon,
-                    fill: true,
-                    fswapLink: true,
-                },
+                // {
+                //     url: {
+                //         name: 'fmint',
+                //     },
+                //     title: 'fMint',
+                //     icon: fmintIcon,
+                //     fillColor: true,
+                //     fmintLink: true,
+                // },
+                // {
+                //     url: {
+                //         name: 'fswap',
+                //     },
+                //     title: 'fSwap',
+                //     icon: swapIcon,
+                //     fill: true,
+                //     fswapLink: true,
+                // },
                 /*{
                     url: {
                         name: 'defi',
@@ -147,24 +147,24 @@ export default {
                     deFiLink: true,
                     fill: true,
                 },*/
-                {
-                    url: {
-                        name: 'funiswap',
-                    },
-                    title: 'fUNI',
-                    icon: funiIcon,
-                    fill: true,
-                    fUniswapLink: true,
-                },
-                {
-                    url: {
-                        name: 'gov',
-                    },
-                    title: 'Governance',
-                    icon: voteIcon,
-                    govLink: true,
-                    fill: true,
-                },
+                // {
+                //     url: {
+                //         name: 'funiswap',
+                //     },
+                //     title: 'fUNI',
+                //     icon: funiIcon,
+                //     fill: true,
+                //     fUniswapLink: true,
+                // },
+                // {
+                //     url: {
+                //         name: 'gov',
+                //     },
+                //     title: 'Governance',
+                //     icon: voteIcon,
+                //     govLink: true,
+                //     fill: true,
+                // },
                 {
                     url: {
                         name: 'settings',

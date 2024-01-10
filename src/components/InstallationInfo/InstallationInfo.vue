@@ -1,9 +1,10 @@
 <template>
     <section :aria-labelledby="labelId" class="installation-info">
-        <h2 :id="labelId" class="not-visible">Wallet instalation</h2>
+        <h2 :id="labelId" class="not-visible">Wallet installation</h2>
 
         <p class="align-center">
-            The Fantom fWallet has been created as a Progressive Web App (PWA) which is easy to launch on all platforms:
+            The X1 Fastnet Wallet has been created as a Progressive Web App (PWA) which is easy to launch on all
+            platforms:
         </p>
 
         <div class="inst-buttons">
@@ -40,11 +41,12 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Fantom Wallet</a> in
+                        <b>Step 1:</b> Open the
+                        <a href="https://wallet.x1-fastnet.infrafc.org/">X1 Fastnet Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Go to <b>Settings</b> (Three dots in the top right corner)</li>
-                    <li><b>Step 3:</b> Click <b>“Install Fantom PWA Wallet”</b></li>
+                    <li><b>Step 3:</b> Click <b>“Install X1 Fastnet PWA Wallet”</b></li>
                 </ul>
             </div>
         </f-window>
@@ -80,7 +82,8 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Fantom Wallet</a> in
+                        <b>Step 1:</b> Open the
+                        <a href="https://wallet.x1-fastnet.infrafc.org/">X1 Fastnet Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Click <b>Settings</b> (top right corner)</li>
@@ -94,6 +97,7 @@
 <script>
 import FWindow from '../core/FWindow/FWindow.vue';
 import { getUniqueId } from '@/utils';
+
 export default {
     name: 'InstallationInfo',
 

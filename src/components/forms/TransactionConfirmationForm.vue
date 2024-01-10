@@ -28,12 +28,12 @@
                         </div>
                         <div v-if="notEnoughFTM">
                             <f-message type="warning" with-icon class="align-start">
-                                Warning: Not enough available FTM for gas fees. Transfer FTM to your address to proceed.
+                                Warning: Not enough available XN for gas fees. Transfer XN to your address to proceed.
                             </f-message>
                             <br />
                         </div>
 
-                        <p class="max-fee" tabindex="0">Max Fee: {{ dMaxFee }} FTM</p>
+                        <p class="max-fee" tabindex="0">Max Fee: {{ dMaxFee }} XN</p>
 
                         <advanced-tx-functions ref="atxfuncs" :gas-info="gasInfo" />
 

@@ -40,17 +40,19 @@
                             </f-placeholder>
                         </div>
                     </div>
-                    <div class="row no-collapse">
-                        <div class="col f-row-label">Minted sFTM</div>
-                        <div class="col">
-                            <f-placeholder :content-loaded="!!accountInfo" block :replacement-num-chars="10">
-                                <template v-if="accountInfo">
-                                    <f-t-m-token-value :value="outstandingSFTM" no-currency />
-                                    sFTM
-                                </template>
-                            </f-placeholder>
-                        </div>
-                    </div>
+
+                    <!--                    <div class="row no-collapse">-->
+                    <!--                        <div class="col f-row-label">Minted sFTM</div>-->
+                    <!--                        <div class="col">-->
+                    <!--                            <f-placeholder :content-loaded="!!accountInfo" block :replacement-num-chars="10">-->
+                    <!--                                <template v-if="accountInfo">-->
+                    <!--                                    <f-t-m-token-value :value="outstandingSFTM" no-currency />-->
+                    <!--                                    sFTM-->
+                    <!--                                </template>-->
+                    <!--                            </f-placeholder>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+
                     <div class="row no-collapse">
                         <div class="col f-row-label">Pending withdraw</div>
                         <div class="col">
@@ -133,7 +135,7 @@
                                 </f-message>
                                 <!--
                                 <h3 class="align-center">
-                                    Your {{ toFTM(accountInfo.delegated) }} Opera FTM is available for withdraw in 7 days.
+                                    Your {{ toFTM(accountInfo.delegated) }} X1 Fastnet XN is available for withdraw in 7 days.
                                 </h3>
                                 -->
                             </template>
@@ -189,22 +191,22 @@
                                 >
                                     Extend Delegation Lock
                                 </button>-->
-                                <button
-                                    v-show="canMintSFTM"
-                                    class="btn large"
-                                    :disabled="!canMintSFTM"
-                                    @click="mintSFTM()"
-                                >
-                                    Mint sFTM
-                                </button>
-                                <button
-                                    v-show="canRepaySFTM"
-                                    class="btn large"
-                                    :disabled="!canRepaySFTM"
-                                    @click="repaySFTM()"
-                                >
-                                    Repay sFTM
-                                </button>
+                                <!--                                <button-->
+                                <!--                                    v-show="canMintSFTM"-->
+                                <!--                                    class="btn large"-->
+                                <!--                                    :disabled="!canMintSFTM"-->
+                                <!--                                    @click="mintSFTM()"-->
+                                <!--                                >-->
+                                <!--                                    Mint sFTM-->
+                                <!--                                </button>-->
+                                <!--                                <button-->
+                                <!--                                    v-show="canRepaySFTM"-->
+                                <!--                                    class="btn large"-->
+                                <!--                                    :disabled="!canRepaySFTM"-->
+                                <!--                                    @click="repaySFTM()"-->
+                                <!--                                >-->
+                                <!--                                    Repay sFTM-->
+                                <!--                                </button>-->
 
                                 <f-message
                                     v-if="!canUndelegate && canClaimRewards"
@@ -219,12 +221,12 @@
                                     You can claim rewards for a maximum of {{ claimMaxEpochs }} epochs at once (use
                                     repeatedly if needed).-->
                                 </f-message>
-                                <f-message v-if="showRepaySFTMMessage" type="info" with-icon class="align-start">
-                                    Can't repay sFTM, not enough unlocked sFTM
-                                </f-message>
-                                <f-message v-if="showUndelegateMessage" type="info" with-icon class="align-start">
-                                    Can't undelegate, repay sFTM first please
-                                </f-message>
+                                <!--                                <f-message v-if="showRepaySFTMMessage" type="info" with-icon class="align-start">-->
+                                <!--                                    Can't repay sFTM, not enough unlocked sFTM-->
+                                <!--                                </f-message>-->
+                                <!--                                <f-message v-if="showUndelegateMessage" type="info" with-icon class="align-start">-->
+                                <!--                                    Can't undelegate, repay sFTM first please-->
+                                <!--                                </f-message>-->
                             </template>
                         </template>
                         <!--                        <template v-else>
@@ -432,7 +434,7 @@ export default {
             } else {
                 return (
                     this._delegation &&
-                    this._delegation.tokenizerAllowedToWithdraw &&
+                    // this._delegation.tokenizerAllowedToWithdraw &&
                     accountInfo &&
                     // accountInfo.pendingRewards &&
                     // accountInfo.pendingRewards === '0x0' &&
@@ -539,9 +541,10 @@ export default {
         },
 
         outstandingSFTM() {
-            return this.sftmToken && this._delegation
-                ? this.$defi.fromTokenValue(this._delegation.outstandingSFTM, this.sftmToken) || 0
-                : 0;
+            // return this.sftmToken && this._delegation
+            //     ? this.$defi.fromTokenValue(this._delegation.outstandingSFTM, this.sftmToken) || 0
+            //     : 0;
+            return 0;
         },
 
         /**
@@ -974,8 +977,6 @@ export default {
                             amountInWithdraw
                             unlockedAmount
                             claimedReward
-                            outstandingSFTM
-                            tokenizerAllowedToWithdraw
                             isFluidStakingActive
                             isDelegationLocked
                             lockDuration

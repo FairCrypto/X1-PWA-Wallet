@@ -12,7 +12,7 @@
             class="min-h-100"
             @cancel-button-click="$emit('cancel-button-click', $event)"
         >
-            <h2 class="not-visible" data-focus>Delegate FTM</h2>
+            <h2 class="not-visible" data-focus>Delegate XN</h2>
 
             <div class="transaction-info">
                 <div class="row no-collapse">
@@ -25,7 +25,7 @@
                     <div class="col break-word">
                         {{ currentAccount.address }}
                         <span class="f-row-label">
-                            ( {{ toFTM(currentAccount.balance) }} FTM
+                            ( {{ toFTM(currentAccount.balance) }} XN
                             <template v-if="currentAccount.name">, {{ currentAccount.name }}</template> )
                         </span>
                     </div>

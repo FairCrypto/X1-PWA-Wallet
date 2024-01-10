@@ -27,7 +27,7 @@
                         aria-hidden="true"
                         class="logo-inactive"
                     />
-                    <span class="title">Fantom Opera</span>
+                    <span class="title">X1 Fastnet</span>
                 </span>
             </label>
         </li>

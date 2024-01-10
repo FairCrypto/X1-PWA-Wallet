@@ -113,7 +113,7 @@ export default {
             columns: [
                 {
                     name: 'amount',
-                    label: 'Amount (FTM)',
+                    label: 'Amount (XN)',
                     formatter: (_value) => {
                         return WEIToFTM(_value);
                     },

@@ -1,7 +1,7 @@
 <template>
     <div class="receive-ftm">
         <div class="align-center">
-            Send your Opera FTM to:
+            Send your X1 Fastnet XN to:
 
             <h3 class="address break-word" :class="addressCssClass">
                 {{ currentAccount.address }} &nbsp;
@@ -20,8 +20,8 @@
                 >
                     <template #popover-text>
                         Address copied to clipboard. <br />
-                        Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to
-                        use a different address!
+                        Warning: Use this address to receive X1 Fastnet XN only. If you are receiving XN-ERC20 you need
+                        to use a different address!
                     </template>
                 </f-copy-button>
             </h3>
@@ -43,7 +43,7 @@
 
         <vue-q-r-code-component :text="currentAccount.address" class="qr-code" />
         <f-message type="warning" with-icon>
-            Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to use a
+            Warning: Use this address to receive X1 Fastnet XN only. If you are receiving XN-ERC20 you need to use a
             different address!
         </f-message>
 

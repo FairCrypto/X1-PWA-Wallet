@@ -14,7 +14,7 @@
                     :to="{ name: 'account-send-transaction-form' }"
                     class="action"
                     title="Send"
-                    aria-label="Send FTM"
+                    aria-label="Send XN"
                 >
                     <span class="btn large same-size round">
                         <icon data="@/assets/svg/send.svg" width="20" height="20" aria-hidden="true" />
@@ -23,7 +23,7 @@
                 </router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'account-receive' }" class="action" title="Receive" aria-label="Receive FTM">
+                <router-link :to="{ name: 'account-receive' }" class="action" title="Receive" aria-label="Receive XN">
                     <span class="btn large same-size round">
                         <icon data="@/assets/svg/receive.svg" width="20" height="20" aria-hidden="true" />
                     </span>

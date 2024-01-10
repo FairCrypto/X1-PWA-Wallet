@@ -14,7 +14,7 @@
                                 class="icon-fill-color"
                             />
                         </div>
-                        <p class="description">Mint fUSD by locking your FTM</p>
+                        <p class="description">Mint fUSD by locking your XN</p>
                         <router-link :to="{ name: 'defi-fmint' }" class="clickable title">
                             Mint fUSD
                         </router-link>
@@ -32,7 +32,7 @@
                                 class="icon-stroke-color"
                             />
                         </div>
-                        <p class="description">Trade synthetic assets to FTM and fUSD</p>
+                        <p class="description">Trade synthetic assets to XN and fUSD</p>
                         <div class="title">
                             <router-link :to="{ name: 'defi-ftrade' }" class="clickable title">
                                 Start Trading

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 class="align-center" data-focus>Receive Opera FTM</h2>
+        <h2 class="align-center" data-focus>Receive X1 Fastnet XN</h2>
 
         <f-card class="receive-coins f-card-double-padding">
             <ReceiveFTM />

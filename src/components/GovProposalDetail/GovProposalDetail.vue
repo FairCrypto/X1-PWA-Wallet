@@ -66,7 +66,7 @@
                                             <f-placeholder :content-loaded="!!item.amount" :replacement-num-chars="10">
                                                 {{ item.amount }}
                                             </f-placeholder>
-                                            FTM delegated to
+                                            XN delegated to
                                             {{ item.validator.stakerInfo.name }} ({{ parseInt(item.validator.id, 16) }})
                                             <span v-if="item.validator.stakerInfo._unknown" class="perex">
                                                 {{ item.validator.stakerAddress }}

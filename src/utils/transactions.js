@@ -35,7 +35,7 @@ export function FTMToUSD(_value, _tokenPrice = 0) {
 }
 
 /**
- * Convert value to FTM.
+ * Convert value to XN.
  *
  * @param {string|number} _value
  * @return {string}

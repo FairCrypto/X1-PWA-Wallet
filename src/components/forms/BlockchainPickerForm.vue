@@ -1,11 +1,11 @@
 <template>
     <div class="blockchain-picker-form">
         <h2 class="with-back-btn align-center" data-focus>
-            Send Opera FTM
+            Send X1 Fastnet XN
         </h2>
 
         <f-card class="f-card-double-padding">
-            <h3 :id="labelId" class="align-center">Which blockchain are you sending FTM to?</h3>
+            <h3 :id="labelId" class="align-center">Which blockchain are you sending XN to?</h3>
 
             <div class="bc-picker">
                 <f-form ref="form" :aria-labelledby="labelId" center-form @f-form-submit="onFormSubmit">

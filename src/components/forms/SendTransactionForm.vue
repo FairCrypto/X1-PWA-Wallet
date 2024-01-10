@@ -2,7 +2,7 @@
     <div class="send-transaction-form">
         <h2 :id="labelId" class="with-back-btn align-center" data-focus>
             <template v-if="token.address"> Send {{ tokenSymbol }} </template>
-            <template v-else>Send Opera FTM</template>
+            <template v-else>Send X1 Fastnet XN</template>
         </h2>
 
         <f-card class="f-card-double-padding">
@@ -75,7 +75,7 @@
                         <div class="align-center form-buttons">
                             <template v-if="d_sendDirection !== 'OperaToOpera'">
                                 <f-message type="warning" class="align-center">
-                                    All bridge transactions incur a fee of {{ minFTMToTransfer }} FTM, deducted from the
+                                    All bridge transactions incur a fee of {{ minFTMToTransfer }} XN, deducted from the
                                     transfer amount.
                                 </f-message>
                                 <f-message
@@ -83,7 +83,7 @@
                                     type="info"
                                     class="big"
                                 >
-                                    You will receive <b>{{ amount - minFTMToTransfer }} FTM</b>
+                                    You will receive <b>{{ amount - minFTMToTransfer }} XN</b>
                                 </f-message>
                                 <br />
                             </template>
@@ -166,7 +166,7 @@ export default {
             amountErrMsg: 'Invalid amount',
             gasPrice: '',
             amount: '',
-            sendToErrorMsg: 'Enter a valid Opera FTM address or domain name',
+            sendToErrorMsg: 'Enter a valid X1 Fastnet XN address or domain name',
             /** Balance of BNB or ETH account. */
             ETHOrBNBAccountBalance: '',
             minFTMToTransfer: appConfig.bnbridgeApi.minFTMToTransfer,
@@ -229,7 +229,7 @@ export default {
         tokenSymbol() {
             const { token } = this;
 
-            return token.address ? this.$defi.getTokenSymbol(token) : 'FTM';
+            return token.address ? this.$defi.getTokenSymbol(token) : 'XN';
         },
 
         /**
@@ -295,9 +295,9 @@ export default {
             this.ETHOrBNBAccountBalance = '';
 
             if (d_sendDirection === 'OperaToOpera') {
-                value = (await this.resolveAddress(value, 'FTM', 'OPERA')) || value;
+                value = (await this.resolveAddress(value, 'XN', 'OPERA')) || value;
                 validAddress = this.$fWallet.isValidAddress(value);
-                this.sendToErrorMsg = 'Enter a valid Opera FTM address or domain name';
+                this.sendToErrorMsg = 'Enter a valid X1 Fastnet XN address or domain name';
             } else if (d_sendDirection === 'OperaToBinance') {
                 validAddress = this.$bnb.isBNBAddress(value);
                 this.sendToErrorMsg = 'Enter a valid BNB address';
@@ -310,7 +310,7 @@ export default {
                     } else {
                         try {
                             const data = await this.$bnb.getBNBBalances(value);
-                            this.ETHOrBNBAccountBalance = `Current Fantom Balance: ${data.balance} FTM`;
+                            this.ETHOrBNBAccountBalance = `Current Fantom Balance: ${data.balance} XN`;
                         } catch (_error) {
                             validAddress = false;
 
@@ -329,7 +329,7 @@ export default {
                 if (validAddress) {
                     try {
                         const balance = await this.$bnb.getETHBalance(value);
-                        this.ETHOrBNBAccountBalance = `Current Fantom Balance: ${balance} FTM`;
+                        this.ETHOrBNBAccountBalance = `Current Fantom Balance: ${balance} XN`;
                     } catch (_error) {
                         validAddress = false;
 
@@ -450,7 +450,7 @@ export default {
                 this.windowTitle =
                     this.token && this.token.symbol
                         ? `Send ${this.$defi.getTokenSymbol(this.token)}`
-                        : 'Send Opera FTM';
+                        : 'Send X1 Fastnet XN';
 
                 this.$refs.confirmationWindow.changeComponent('transaction-confirmation', {
                     txData: { ...data },

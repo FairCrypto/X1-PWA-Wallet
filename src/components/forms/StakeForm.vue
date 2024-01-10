@@ -1,7 +1,7 @@
 <template>
     <div class="stake-form" :class="{ 'increase-delegation': d_increaseDelegation }">
-        <h1 :id="labelId" data-focus class="with-back-btn align-center" aria-label="Delegate FTM">
-            <span>Delegate FTM</span>
+        <h1 :id="labelId" data-focus class="with-back-btn align-center" aria-label="Delegate XN">
+            <span>Delegate XN</span>
             <f-back-button ref="backButton" :route-name="getBackButtonRoute('staking-stake-form')" />
         </h1>
         <br />
@@ -26,7 +26,7 @@
                                 <div class="input-label-layout">
                                     <label :for="sProps.inputId">{{ sProps.label }}</label>
                                     <button type="button" class="btn light small" @click="onEntireBalanceClick">
-                                        Entire Balance -2 FTM
+                                        Entire Balance -2 XN
                                     </button>
                                 </div>
                             </template>
@@ -80,7 +80,7 @@
             ref="confirmationWindow"
             body-min-height="350px"
             window-class="send-transaction-form-tx-window"
-            window-title="Delegate FTM"
+            window-title="Delegate XN"
             :steps-count="1"
             :active-step="1"
             @cancel-button-click="onCancelButtonClick"
@@ -246,9 +246,9 @@ export default {
                 } else if (remainingBalance < 0) {
                     this.amountErrMsg = `You have no balance left`;
                 } else if (value > 0 && value < 1) {
-                    this.amountErrMsg = `You can't stake amount less than 1 FTM`;
+                    this.amountErrMsg = `You can't stake amount less than 1 XN`;
                 } else if (value >= 1) {
-                    this.amountErrMsg = `You can stake max ${remainingBalance} FTM`;
+                    this.amountErrMsg = `You can stake max ${remainingBalance} XN`;
                 }
             }
 
@@ -257,7 +257,7 @@ export default {
 
                 if (value > delegatedLimit) {
                     this.amountErrMsg =
-                        `Staking limit reached. You can stake max ${delegatedLimit} FTM on validator ` + this.validator;
+                        `Staking limit reached. You can stake max ${delegatedLimit} XN on validator ` + this.validator;
                     ok = false;
                 }
             }

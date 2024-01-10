@@ -12,7 +12,7 @@
             class="min-h-100"
             @cancel-button-click="$emit('cancel-button-click', $event)"
         >
-            <h2 class="not-visible" data-focus>Withdraw delegated FTM - Confirmation</h2>
+            <h2 class="not-visible" data-focus>Withdraw delegated XN - Confirmation</h2>
 
             <div class="transaction-info">
                 <div class="row no-collapse">

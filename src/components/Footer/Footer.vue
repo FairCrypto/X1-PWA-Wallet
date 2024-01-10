@@ -6,7 +6,7 @@
                     <social-media-links></social-media-links>
                 </div>
                 <div class="col align-center-sm align-end">
-                    <a href="https://fantom.foundation/" target="_blank" rel="noopener">©2020 Fantom Foundation </a>
+                    <a href="https://faircrypto.org/" target="_blank" rel="noopener">©2023 Faircrypto</a>
                 </div>
             </div>
         </div>

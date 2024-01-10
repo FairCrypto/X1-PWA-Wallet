@@ -1,42 +1,16 @@
-//
 const appConfig = {
     // app title
-    name: 'Fantom fWallet',
+    name: 'X1 Testnet Wallet',
     // app description
-    description: 'Fantom fWallet',
+    description: 'X2 Testnet Wallet',
     // app keywords
-    keywords: 'fantom, opera, wallet',
+    keywords: 'x1-testnet, metamask',
     // apollo client settings
     apollo: {
         // list of providers. if one of them is unavailable, another is randomly picked
         providers: [
             {
-                http: 'https://xapi-nodea.fantom.network/',
-                // for subscriptions
-                ws: '',
-            },
-            {
-                http: 'https://xapi-nodeb.fantom.network/',
-                // for subscriptions
-                ws: '',
-            },
-            {
-                http: 'https://xapi-nodec.fantom.network/',
-                // for subscriptions
-                ws: '',
-            },
-            {
-                http: 'https://xapi-noded.fantom.network/',
-                // for subscriptions
-                ws: '',
-            },
-            {
-                http: 'https://xapi-nodee.fantom.network/',
-                // for subscriptions
-                ws: '',
-            },
-            {
-                http: 'https://xapi-nodef.fantom.network/',
+                http: 'https://graphql-api.x1-testnet.infrafc.org/graphql',
                 // for subscriptions
                 ws: '',
             },
@@ -45,13 +19,13 @@ const appConfig = {
         defaultProviderIndex: 'random',
     },
     // Opera chain id
-    chainId: '0xfa',
+    chainId: '0x31ce5',
     // JSON-RPC endpoint
-    rpc: 'https://rpcapi.fantom.network/',
+    rpc: 'https://x1-testnet.xen.network',
     // used in links pointing to fantom explorer
-    explorerUrl: 'https://ftmscan.com/',
+    explorerUrl: 'https://explorer.x1-testnet.xen.network/',
     // used in links pointing to validators
-    explorerUrl2: 'https://explorer.fantom.network/',
+    explorerUrl2: 'https://pwa-explorer.x1-testnet.infrafc.org/',
     // used in links pointing to fantom explorer's transaction detail
     explorerTransactionPath: 'tx',
     // used in links pointing to ethereum explorer
@@ -68,10 +42,9 @@ const appConfig = {
         useETH: false,
         // use Binance chain
         useBNB: false,
-        // minimal amount of FTM to ETH transfer
+        // minimal amount of XN to ETH transfer
         minFTMToTransfer: 50,
     },
-    showFWalletWarning: !!process.env.VUE_APP_FWALLET_WARNING || false,
     disableFLend: true,
     //
     useTestnet: false,
@@ -94,14 +67,14 @@ const appConfig = {
         // used in links pointing to fantom explorer's transaction detail
         explorerTransactionPath: 'transactions',
         // chain id for testnet
-        chainId: '0xfa2',
+        chainId: '0x31ce5',
     },
     // progressive web application
     usePWA: true,
     // pwa settings
     pwa: {
         // name used in pwa manifest
-        name: 'Fantom fWallet',
+        name: 'X1 Testnet Wallet',
         categories: ['finance'],
     },
     // determines if app is chrome extension
@@ -111,9 +84,9 @@ const appConfig = {
         // chrome extension version - increase version number, if you want to publish in the chrome web store
         version: '0.0.1',
         // chrome extension name
-        name: 'Fantom fWallet',
+        name: 'X1 Testnet Wallet',
         // chrome extension description
-        description: 'Fantom fWallet',
+        description: 'X1 Testnet Wallet',
         // output directory for application
         outputDir: 'chrome-extension/dist',
         // output directory for application (relative to outputDir)

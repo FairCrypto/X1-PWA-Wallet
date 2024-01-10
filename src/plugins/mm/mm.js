@@ -10,10 +10,10 @@ const OPERA_CHAIN_ID = appConfig.chainId;
 /** @type {MMChain} */
 export const OPERA_MAINNET = {
     chainId: appConfig.mainnet.chainId,
-    chainName: 'Fantom Opera Mainnet',
+    chainName: 'X1 Mainnet',
     nativeCurrency: {
-        name: 'Fantom',
-        symbol: 'FTM',
+        name: 'XN',
+        symbol: 'XN',
         decimals: 18,
     },
     rpcUrls: [appConfig.mainnet.rpc],
@@ -23,10 +23,10 @@ export const OPERA_MAINNET = {
 /** @type {MMChain} */
 export const OPERA_TESTNET = {
     chainId: appConfig.testnet.chainId,
-    chainName: 'Fantom Testnet',
+    chainName: 'X1 Testnet',
     nativeCurrency: {
-        name: 'Fantom',
-        symbol: 'FTM',
+        name: 'XN',
+        symbol: 'XN',
         decimals: 18,
     },
     rpcUrls: [appConfig.testnet.rpc],

@@ -4,7 +4,7 @@
             :tx="tx"
             confirmation-comp-name="delegation-unlock-confirmation"
             send-button-label="Unlock"
-            password-label="Please enter your wallet password to unlock your delegated FTM"
+            password-label="Please enter your wallet password to unlock your delegated XN"
             set-tmp-pwd
             :tmp-pwd-code="tmpPwdCode"
             :on-send-transaction-success="onSendTransactionSuccess"
@@ -14,7 +14,7 @@
             class="min-h-100"
             @cancel-button-click="$emit('cancel-button-click', $event)"
         >
-            <h2 class="not-visible" data-focus>Unlock FTM - Confirmation</h2>
+            <h2 class="not-visible" data-focus>Unlock XN - Confirmation</h2>
 
             <div class="transaction-info">
                 <div class="row no-collapse">

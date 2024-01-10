@@ -1,8 +1,8 @@
 <template>
     <div class="welcome-view">
         <div class="intro">
-            <h1>Welcome to Fantom fWallet</h1>
-            <h2>Send, receive and stake your Opera FTM</h2>
+            <h1>Welcome to the X1 Fastnet Wallet</h1>
+            <h2>Send, receive and stake your X1 Fastnet XN</h2>
         </div>
 
         <div class="view-account-main">

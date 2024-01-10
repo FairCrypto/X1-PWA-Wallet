@@ -275,7 +275,7 @@ export default {
                 },
                 {
                     name: 'amount',
-                    label: 'Amount (FTM)',
+                    label: 'Amount (XN)',
                     itemProp: 'transaction.value',
                     formatter: (_value) => {
                         return WEIToFTM(_value);

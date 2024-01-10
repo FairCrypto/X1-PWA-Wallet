@@ -13,7 +13,7 @@
             class="min-h-100"
             @cancel-button-click="$emit('cancel-button-click', $event)"
         >
-            <h2 class="not-visible" data-focus>Undelegate FTM - Confirmation</h2>
+            <h2 class="not-visible" data-focus>Undelegate XN - Confirmation</h2>
 
             <div class="transaction-info">
                 <div class="row no-collapse">
@@ -38,7 +38,7 @@
                     <div class="col break-word">{{ dAmount }}</div>
                 </div>
 
-                <f-message v-if="amountDiff > 0" type="warning"> {{ amountDiff }} FTM slashing applied </f-message>
+                <f-message v-if="amountDiff > 0" type="warning"> {{ amountDiff }} XN slashing applied </f-message>
             </div>
 
             <template #window-content>

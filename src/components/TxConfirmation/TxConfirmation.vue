@@ -70,7 +70,7 @@
                     Metamask is not installed.
                 </div>
                 <div v-else-if="!$mm.isCorrectChainId()">
-                    Please, select Opera chain in Metamask.
+                    Please, select X1 chain in Metamask.
                 </div>
                 <div v-else-if="mmAccount.toLowerCase() !== currentAccount.address.toLowerCase()">
                     Please, select account <b>{{ currentAccount.address }}</b> in Metamask.

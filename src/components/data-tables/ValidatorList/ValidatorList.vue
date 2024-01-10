@@ -78,7 +78,7 @@
                     <div v-if="column" class="row no-collapse no-vert-col-padding">
                         <div class="col break-word align-center select-validator-mv">
                             <button
-                                :disabled="item.isOffline || item.isCheater || item.alreadyDelegated"
+                                :disabled="item.isOffline || item.isCheater"
                                 class="btn select-btn"
                                 :data-validator-id="value"
                             >
@@ -88,7 +88,7 @@
                     </div>
                     <template v-else>
                         <button
-                            :disabled="item.isOffline || item.isCheater || item.alreadyDelegated"
+                            :disabled="item.isOffline || item.isCheater"
                             class="btn select-btn"
                             :data-validator-id="value"
                         >

@@ -42,8 +42,8 @@
                                     >
                                         <template #popover-text>
                                             Address copied to clipboard. <br />
-                                            Warning: Use this address to receive Opera FTM only. If you are receiving
-                                            FTM-ERC20 you need to use a different address!
+                                            Warning: Use this address to receive X1 Fastnet XN only. If you are
+                                            receiving XN-ERC20 you need to use a different address!
                                         </template>
                                     </f-copy-button>
 
@@ -69,7 +69,7 @@
                             <span class="col col-6-md">
                                 <span class="value">
                                     <f-t-m-token-value :value="account.balance" convert no-currency />
-                                    <span class="ftm"> FTM</span>
+                                    <span class="ftm"> XN</span>
                                 </span>
                                 <span class="currency">
                                     <f-t-m-token-value
@@ -83,7 +83,7 @@
                             <span class="col col-6-md">
                                 <span class="value">
                                     <f-t-m-token-value :value="account.totalBalance" convert no-currency />
-                                    <span class="ftm"> FTM</span>
+                                    <span class="ftm"> XN</span>
                                 </span>
                                 <span class="currency">
                                     <f-t-m-token-value

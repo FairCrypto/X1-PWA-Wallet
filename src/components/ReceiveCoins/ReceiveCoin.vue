@@ -21,7 +21,7 @@
 
                 <br /><br />
                 <f-message type="warning" class="align-center">
-                    All bridge transactions incur a fee of {{ minFTMToTransfer }} FTM, deducted from the transfer
+                    All bridge transactions incur a fee of {{ minFTMToTransfer }} XN, deducted from the transfer
                     amount.
                 </f-message>
 

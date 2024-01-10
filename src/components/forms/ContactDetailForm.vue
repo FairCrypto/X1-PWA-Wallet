@@ -34,8 +34,8 @@
                             >
                                 <template #popover-text>
                                     Address copied to clipboard. <br />
-                                    Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20
-                                    you need to use a different address!
+                                    Warning: Use this address to receive X1 Fastnet XN only. If you are receiving
+                                    XN-ERC20 you need to use a different address!
                                 </template>
                             </f-copy-button>
                             <button
@@ -130,7 +130,7 @@
 
         <q-r-code-window ref="qrWindow" :address="contactData.address">
             <f-message v-show="blockchain === 'fantom'" type="warning" with-icon>
-                Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to use a
+                Warning: Use this address to receive X1 Fastnet XN only. If you are receiving XN-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>
@@ -284,7 +284,7 @@ export default {
             let address = _value;
             if (blockchain === 'fantom' && resolution.isSupportedDomainInNetwork(_value)) {
                 try {
-                    this.resolvedAddress = address = await resolution.multiChainAddr(_value, 'FTM', 'OPERA');
+                    this.resolvedAddress = address = await resolution.multiChainAddr(_value, 'XN', 'OPERA');
                 } catch (e) {
                     console.log('Domain resolution failed', e);
                 }
