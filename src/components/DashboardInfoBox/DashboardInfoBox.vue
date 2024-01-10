@@ -26,7 +26,7 @@
                         <span class="not-visible">Total balance (Sum)</span>
                         <span>
                             <f-t-m-token-value :value="accountsTotalBalance" no-currency />
-                            <span class="ftm"> XNFTM</span>
+                            <span class="ftm"> XN</span>
                         </span>
                     </h3>
                     <div class="currency">
