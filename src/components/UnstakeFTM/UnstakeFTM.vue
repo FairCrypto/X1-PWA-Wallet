@@ -21,7 +21,7 @@
                 </legend>-->
 
                 <div class="form-body">
-                    <h3>The withdrawal of your delegated tokens will take 7 days</h3>
+                    <h3>The withdrawal of your delegated tokens will take 24 hours</h3>
                     <h3 v-if="lockExist" class="orange-color" style="padding-top: 0;">
                         {{ cToUnlockAmount }} XN of {{ amount }} XN are still locked.
                         <template v-if="cUnlockPenalty > 0">
