@@ -12,7 +12,7 @@
             <div class="header">
                 <div class="header-logo">
                     <router-link to="/">
-                        <img src="fantom-logo.svg" alt="" class="not-fluid" />
+                        <!--                        <img src="fantom-logo.svg" alt="" class="not-fluid" />-->
                     </router-link>
                 </div>
             </div>

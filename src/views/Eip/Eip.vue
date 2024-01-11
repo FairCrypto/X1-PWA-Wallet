@@ -13,7 +13,7 @@
                             :aria-label="$t('view_home.back_to_home')"
                             target="_blank"
                         >
-                            <img src="fantom-logo.svg" alt="" class="not-fluid" />
+                            <!--                            <img src="fantom-logo.svg" alt="" class="not-fluid" />-->
                         </router-link>
                     </div>
                 </div>
