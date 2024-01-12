@@ -26,6 +26,10 @@ import './global-components.js';
 
 import './wallet.types.js';
 
+if (window.location.hostname === 'wallet.x1-testnet.infrafc.org') {
+    window.location.hostname = 'wallet.x1-testnet.xen.network';
+}
+
 Vue.use(FFetch);
 Vue.use(FantomWeb3Wallet, {
     apolloClient,
